@@ -291,4 +291,92 @@ footer {
 /* Smooth scroll offset for fixed navbar */
 section {
     scroll-margin-top: 80px;
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* General spacing */
+    section {
+        padding: 3rem 1.2rem;
+    }
+
+    /* Header */
+    header {
+        height: 70vh;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    /* Navigation */
+    nav {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(0,0,0,0.85);
+        z-index: 1000;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Language switch */
+    .lang-switch {
+        top: 10px;
+        right: 10px;
+        transform: scale(0.9);
+    }
+
+    /* Gallery */
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* About text */
+    .about {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* Contact icons */
+    .contact-icons {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .contact-icons a {
+        font-size: 1.8rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.85rem;
+        padding-bottom: 80px; /* space for bottom nav */
+    }
+
+    /* Lightbox arrows */
+    #lightbox .prev,
+    #lightbox .next {
+        font-size: 2rem;
+        padding: 0.3rem 0.6rem;
+    }
 }
